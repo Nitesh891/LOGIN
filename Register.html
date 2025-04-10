@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form class="login-form" action="submit.php" method="POST">
+        <label for="FirstName">First Name</label>
+        <input type="text" name="FirstName" id="FirstName" placeholder="Enter your First Name" required>
+
+        <label for="LastName">Last Name</label>
+        <input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name" required>
+
+        <label for="FatherName">Father's Name</label>
+        <input type="text" name="FatherName" id="FatherName" placeholder="Enter your Father's Name" required>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob" required>
+
+        <label for="Email">Email</label>
+        <input type="email" name="email" id="Email" placeholder="Enter your Email" required>
+
+        <label for="Phone">Phone Number</label>
+        <input type="tel" name="Phone" id="Phone" placeholder="Enter your Phone Number" required>
+
+        <label for="Password">Password</label>
+        <input type="password" name="Password" id="Password" placeholder="Enter your Password" required>
+
+        <label>Gender:</label>
+        <div class="gender-options">
+            <input type="radio" name="Gender" value="Male" id="Male" required>
+            <label for="Male">Male</label>
+            <input type="radio" name="Gender" value="Female" id="Female">
+            <label for="Female">Female</label>
+        </div>
+
+        <label for="Address">Address</label>
+        <textarea id="Address" name="Address" rows="4" placeholder="Enter your full address" required></textarea>
+
+        <label for="Trade">Trade</label>
+        <select name="Trade" id="Trade" required>
+            <option value="">Select a trade</option>
+            <option value="Copa">COPA</option>
+            <option value="Fitter">Fitter</option>
+            <option value="Electrician">Electrician</option>
+            <option value="Electronics">Electronics</option>
+        </select>
+
+        <input type="submit" value="Register" class="Submit">
+    </form>
+</body>
+</html>
